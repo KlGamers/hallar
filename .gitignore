@@ -9,3 +9,9 @@ models/
 .swiftpm/
 *.dylib
 *.so
+
+.gradle/
+android/local.properties
+android/**/build/
+.kotlin/
+.cxx/
