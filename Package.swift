@@ -9,7 +9,7 @@ let package = Package(
         .target(
             name: "CHallar",
             path: "core",
-            exclude: ["tests", "third_party/vecdex/LICENSE", "third_party/vecdex/VERSION"],
+            exclude: ["tests", "src/unicode_tables.inc", "third_party/vecdex/LICENSE", "third_party/vecdex/VERSION"],
             sources: ["src", "third_party/vecdex/src"],
             publicHeadersPath: "swift-include",
             cxxSettings: [
