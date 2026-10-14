@@ -30,6 +30,7 @@ def lib(path: str | None = None) -> ctypes.CDLL:
         "hallar_model_open": ([cp], vp),
         "hallar_model_free": ([vp], None),
         "hallar_model_dim": ([vp], sz),
+        "hallar_model_vocab": ([vp], sz),
         "hallar_embed": ([vp, cp, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
         "hallar_tokenize": ([vp, cp, ctypes.POINTER(ctypes.c_int32), sz, ctypes.POINTER(sz)], ctypes.c_int),
         "hallar_engine_new": ([vp, sz, sz], vp),
