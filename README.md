@@ -229,4 +229,4 @@ hallar es parte de un conjunto de herramientas para software local-first:
 
 MIT. Los modelos `potion` son de MinishLab (MIT). Los conjuntos de datos de
 los benchmarks se descargan aparte y conservan sus licencias: XQuAD (CC BY-SA
-4.0), MIRACL (Apache 2.0) y XPQA (CDLA-Sharing 1.0).
+4.0) y MIRACL (Apache 2.0); para XPQA consulta la licencia en su repositorio original.
