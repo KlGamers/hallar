@@ -19,10 +19,10 @@ set(HALLAR_SRC
   core/src/model.cpp
   core/src/engine.cpp
   core/src/capi.cpp
-  third_party/vecdex/src/index.cpp)
+  core/third_party/vecdex/src/index.cpp)
 
 add_library(hallar_obj OBJECT ${HALLAR_SRC})
-target_include_directories(hallar_obj PUBLIC core/include third_party/vecdex/include PRIVATE core/src)
+target_include_directories(hallar_obj PUBLIC core/include core/third_party/vecdex/include PRIVATE core/src)
 target_compile_options(hallar_obj PRIVATE -fvisibility=hidden -fno-math-errno)
 if(HALLAR_SANITIZE)
   target_compile_options(hallar_obj PUBLIC -fsanitize=address,undefined -fno-omit-frame-pointer)
@@ -30,7 +30,7 @@ if(HALLAR_SANITIZE)
 endif()
 
 add_library(hallar STATIC $<TARGET_OBJECTS:hallar_obj>)
-target_include_directories(hallar PUBLIC core/include third_party/vecdex/include)
+target_include_directories(hallar PUBLIC core/include core/third_party/vecdex/include)
 if(HALLAR_SANITIZE)
   target_link_options(hallar PUBLIC -fsanitize=address,undefined)
 endif()
