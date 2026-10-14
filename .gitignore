@@ -15,3 +15,9 @@ android/local.properties
 android/**/build/
 .kotlin/
 .cxx/
+.dart_tool/
+flutter/build/
+flutter/example/build/
+flutter/example/ios/Pods/
+flutter/example/ios/Podfile.lock
+.flutter-plugins*
