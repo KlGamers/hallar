@@ -223,6 +223,7 @@ hallar es parte de un conjunto de herramientas para software local-first:
 | [vecdex](https://github.com/KlGamers/vecdex) | Índice vectorial HNSW que usa hallar |
 | [trama](https://github.com/KlGamers/trama) | Sincronización local-first con CRDTs para web y Flutter |
 | [rumbo](https://github.com/KlGamers/rumbo) | Router de intenciones con embeddings y evaluación |
+| [verbo](https://github.com/KlGamers/verbo) | Inferencia de LLM en CPU; con hallar forma un RAG completamente local |
 | [guardia](https://github.com/KlGamers/guardia) | Revisión antes de cada commit |
 | [pulso](https://github.com/KlGamers/pulso) | Monitoreo de servicios autohospedados |
 
