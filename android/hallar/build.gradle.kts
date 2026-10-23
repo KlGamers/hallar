@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
+// AGP 9 compila Kotlin de forma nativa: no hace falta el plugin org.jetbrains.kotlin.android.
 plugins {
     id("com.android.library")
-    id("org.jetbrains.kotlin.android")
 }
 
 val hostDir = layout.buildDirectory.dir("host-jni")
