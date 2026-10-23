@@ -117,7 +117,8 @@ index.add("42", "¿Cómo cambio la contraseña de mi cuenta?")
 val hits = index.search("olvidé mi clave", limit = 5)
 ```
 
-Agrega el módulo `android/hallar` a tu proyecto. Requiere minSdk 24.
+Agrega el módulo `android/hallar` a tu proyecto. Requiere minSdk 24 y Android
+Gradle Plugin 9 o más reciente (usa el soporte de Kotlin integrado de AGP).
 
 ### Flutter
 
